@@ -1,0 +1,4 @@
+#!/bin/bash
+
+oci compute instance action --instance-id ocid1.instance.oc1.eu-frankfurt-1.antheljrnkarfqycsisnsnm4ek3srremchyig4m2coyauf3niptdfezignga --action SOFTSTOP
+
