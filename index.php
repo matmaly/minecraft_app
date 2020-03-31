@@ -30,11 +30,12 @@
 
 	<body>
 		<img src="logo.jpg" alt="Lights" style="width:25%">
-		<?php
-		echo "Hello World!";
-		?>
 		<button id="startBtn" type="button" onclick="startServer()">Start</button>
 		<button id="stopBtn" type="button" onclick="stopServer()">Stop</button>
 		<p id="testId"></p>
+		<?php
+			$output = shell_exec('/var/www/html/oci-cl_scripts/test');
+		  	echo "<pre>$output</pre>";
+		?>
 	</body>
 </html>
