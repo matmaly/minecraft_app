@@ -30,7 +30,9 @@
 
 	<body>
 		<img src="logo.jpg" alt="Lights" style="width:25%">
-
+		<?php
+		echo "Hello World!";
+		?>
 		<button id="startBtn" type="button" onclick="startServer()">Start</button>
 		<button id="stopBtn" type="button" onclick="stopServer()">Stop</button>
 		<p id="testId"></p>
