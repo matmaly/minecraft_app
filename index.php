@@ -13,10 +13,12 @@
 		<p id="testId"></p>
 		<?php
 			function startServer()	{
-				echo "Start";
+				shell_exec('/var/www/html/oci-cl_scripts/start_mc_vm');
+				echo "Server Starting";
 			}
 			function stopServer()   {
-				echo "Stop";
+				shell_exec('/var/www/html/oci-cl_scripts/stop_mc_vm');
+				echo "Server Stopping";
 			}
 			if(array_key_exists("start", $_POST))   {
 				startServer();
@@ -24,7 +26,7 @@
 			if(array_key_exists("stop", $_POST))   {
 				stopServer();
 			}
-			$output = shell_exec('/var/www/html/oci-cl_scripts/test');
+			echo exec('/var/www/html/oci-cl_scripts/test');
 		?>
 	</body>
 </html>
